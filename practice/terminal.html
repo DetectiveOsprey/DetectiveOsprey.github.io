@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <h1> An easy guide to using Vim<br><br></h1>
+        <h1> A fairly incomplete guide to using Vim<br><br></h1>
     </header>
     <main>
         <section>
@@ -40,25 +40,52 @@
                 <li>type <kbd>vim &lt;filename&gt;</kbd></li>
             </ol>
             <h4>Modes in Vim</h4>
+            <p>When entering a mode in Vim, its name will show on the
+            command line, for example:</p> <samp>-- INSERT --</samp>
             <p><strong>Normal Mode</strong> is the default mode in Vim. You
             can use this to quickly navigate through the file using the
             <kbd>h</kbd>/<kbd>j</kbd>/<kbd>k</kbd>/<kbd>l</kbd> keys 
             (because Vim was created before the trackpad and mouse). You can
             also quickly switch to other modes in this mode. You can
             return to Normal Mode from other modes by typing the
-            <kbd>esc</kbd> key.</p>
+            <kbd>Esc</kbd> key.</p>
             <p><strong>Insert Mode</strong> is the mode used for editing
             the file. You can type normally, although you do have to move
             the cursor using the arrow keys as the mouse will not work. 
-            You can enter Insert Mode by typing "<kbd>I</kbd>" while in 
+            You can enter Insert Mode by typing "<kbd>i</kbd>" while in 
             Normal Mode.</p>
             <p><strong>Command-Line Mode</strong> can be used to save,
             quit, or exit Vim, or change the settings of your Vim window.
             It can be accessed by typing "<kbd>:</kbd>" followed by your 
             command.
+            <h4>Closing Vim</h4>
+            <ol>
+                <li>press <kbd>Esc</kbd> to return to Normal Mode</li>
+                <li>type "<kbd>:wq</kbd>" to save and then quit Vim</li>
+                <li>you should be in the terminal</li>
+            </ol>    
             
         </section>
-            <h3>this is a section too</h3>
+            <h3>Files in Vim</h3>
+            <p>To open a new file in Vim, navigate into the directory you 
+            would like the file to be in and then type this code into
+            the terminal:</p>
+            <pre>
+                <code>
+                    vim &lt;filename&gt;
+                </code>
+            </pre>
+            <p>This creates a new file that you can now edit in Vim.
+            If you want to save the file, press <kbd>Esc</kbd> and 
+            then type "<kbd>:wq</kbd>" (write quit). In the terminal,
+            type:
+            <pre>
+                <code>
+                    git add &lt;filename&gt;
+                    git commit -m "write a message about what you changed on your file here"
+                    git push
+                </code>
+            </pre>     
         <section>
             <h3>this one is... you guessed it, a section</h3>
         </section>    
