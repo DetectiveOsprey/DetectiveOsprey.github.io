@@ -11,6 +11,7 @@
 	        font-family: 'Georgia', Times New Roman, sans-serif;
                 padding: 20px;
                 box-sizing: border-box;
+                text-align: center;
 
             
                 margin: 0; 
@@ -20,9 +21,6 @@
               
                 border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAACTUlEQVR4AezWS07FMAyF4QsbZcqUlTBlykphWp2QWrZPb9PyIyHdPOy4XyOrrw/+rAKAWjkfD0ABNQuY03FDATULmNNxQwE1C5jTcUMBNQuY03FDATULmNNVbqi1hI+v75+9f+thT0h2OugTnvGpRwBq5gb06qDaLz/f3172/nV/NDb7pNNxQ9Nk+wGA7vukVwFNk+0HHA6qPU/75X5546rG61jPGzMcO3M46LHlr5cdUPM7AfSioOWytUdGiXS/9lQdR/my69zQrFiwH9AAKLsMaFYs2G8H1R6lPS2ox76s5+tY6+0WYAftFnT1eEDNbxDQ1UC1B2mPMtdrT6f16vNkD+SGZsWC/YAGQNllQLNiwf6VQYPS11wG1PxeAAXULGBOZ7+h3e848/MN6bQ+Het36ZAgmLCDBufdfhlQ8ysG9GzQqOd0e5D5+YZ0R9fHDR3IexOA9vyGaEAHkt7E3UB7GoZoQA2I2xSAbjUMvwE1IG5TpEH1O06/S7fJV/yt9erzdGtOg3YPvHs8oOY3DOhqoNqDtEfp2Fx/mE7P13rDBMkN3NAkWLQd0EgouQ5oEizabgfVHqVj7WlRgdn9Ub4/1q1TdlBrdRdMBqj5pQF6ddCop3Z7psbreWa/IR03dCDpTQDa8xuiAR1IehOng2qPi8baI3Ws8T2efPTpoPmS144A1Px+AP3voNojdWz2maWbznNDpzS1BUBrbtMoQKc0tQVAa27TKECnNLUFQGtu0yhApzS1BUBrbtMoQKc0tQVAa27TKECnNLWFXwAAAP//oHmCrQAAAAZJREFUAwBH0uC4pWgi5gAAAABJRU5ErkJggg==') 28 round; 
             }
-
-
-
 
             button { 
                 background-color: #577bab;
@@ -47,7 +45,14 @@
                  font-size: 0.5rem;
             }
 
-            
+            div.container {
+                text-align: center;
+            }
+
+            ul.list {
+                display: inline-block;
+                text-align: left;
+            }    
 
 
 	</style>
@@ -101,9 +106,11 @@
                 <i><strong>a very accurate representation of me
                 <br></strong></i></p>
                 <p><br></p>
-
+                
+                
                 <h2 style="color: DarkCyan;">✧ things i like ✧</h2>
-                <ul style="color: DarkSlateGray;">
+                <div class="container">
+                <ul style="color: DarkSlateGray;" class="list">
                     <li><i>project hail mary</i></li>
                     <li>existence</li>
 	            <li>birds</li>
@@ -117,9 +124,11 @@
 	            <li>pie</li>
                     <li>chai lattes</li>
                 </ul>
+                </div>
                 <p><br></p>
                 <h2 style="color: DarkCyan;">✧ my pages ✧</h2>
-                <ul style="color: DarkSlateGray;">
+                <div class="container">
+                <ul style="color: DarkSlateGray;" class="list">
                     <li><a href=
                     "https://detectiveosprey.github.io/practice/terminal"
                     target="_blank" rel="noopener noreferrer">
@@ -132,7 +141,8 @@
                 </ul>
                 <p><br></p>
                 <h2 style="color: DarkCyan;">✧ cool websites ✧</h2>
-                <ul style="color: DarkSlateGray;">
+                <div class="container">
+                <ul style="color: DarkSlateGray;" class="list">
                     <li><a href="https://birdsarentreal.com/pages/evidence"
                             target="_blank" rel="noopener noreferrer">
                         birds aren't real</a></li>
@@ -144,6 +154,7 @@
                             overgrown: a really cool comic</a></li>
 
                 </ul>
+                </div>
 
                 <p style="color: DarkSlateGray;">
                 <br><br>↓ validate my html/css! ↓</p>	
