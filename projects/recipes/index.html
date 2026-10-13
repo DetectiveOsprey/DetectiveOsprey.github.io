@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <script src="../../validate.js"></script>
-        <link rel="icon" href="../..images/favicon-pic.png" type="image/png">
+        <link rel="icon" href=../../images/favicon-pic.png" type="image/png">
         <title>recipes!</title>
 
         <style>
@@ -23,8 +23,21 @@
         button {
             background-color: #49A078;
             border-radius: 10px;
-        }    
+        }
 
+        .image-container {
+            display: flex;
+            gap: 1px;
+            justify-content: center;
+        }
+
+        a, a:link, a:visited {
+            color: #216869;
+        }
+
+        a, a:hover, a:active {
+            color: #437575;
+        }
 
         </style>
     </head>
@@ -34,5 +47,42 @@
         <hr>
         <p>i am a dog and i like eating food</p>
         <hr>
-    </header>    
-    </body>    
+        <p><br><br><p>
+    </header>
+    <main>
+        <h2>about me</h2>
+        <p>hello. i am a dog and i live with some humans. the humans make 
+        food and then they feed me brown pellets. it makes me sad.<br>
+        maybe if your humans are nicer then mine then maybe 
+        they will make these recipes for you. good luck<br><br>
+        </p>
+
+        <h2>recipes</h2>
+
+        <div class="image-container">
+        <figure>
+        <img src="recipe-images/food1-large.png"
+             srcset="recipe-images/food1-small.png 240w,
+                     recipe-images/food1-med.png 400w, 
+                     recipe-images/food1-large.png 600w"
+             sizes="(max-width: 300 px) 240 px, 400px"
+             alt="food1">
+            <figcaption><a 
+             href="detectiveosprey.github.io/projects/recipes/1">
+                    crispy cheese bread</a></figcaption>
+        </figure>
+
+        <figure>
+        <img src="recipe-images/food1-large.png"
+             srcset="recipe-images/food1-small.png 240w,
+                     recipe-images/food1-med.png 400w, 
+                     recipe-images/food1-large.png 600w"
+             sizes="(max-width: 300 px) 240 px, 400px"
+             alt="food1">
+            <figcaption><a 
+                    href="detectiveosprey.github.io/projects/recipes/2">
+                    poison cookies</figcaption>
+        </figure>
+        </div>
+    </main>
+    </body>
