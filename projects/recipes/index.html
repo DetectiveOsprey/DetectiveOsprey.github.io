@@ -33,11 +33,17 @@
         }
 
         a, a:link, a:visited {
-            color: #216869;
+            color: #1F2421;
         }
 
         a, a:hover, a:active {
-            color: #437575;
+            color: #415c4b;
+        }
+        
+        .about-container {
+            display: flex;
+            gap: 0.5px;
+            justify-content: center;
         }
 
         </style>
@@ -51,12 +57,24 @@
         <p><br><br><p>
     </header>
     <main>
+        <div class="about-container">
+        <figure>    
         <h2>about me</h2>
         <p>hello. i am a dog and i live with some humans. the humans make 
         food and then they feed me brown pellets. it makes me sad.<br>
         maybe if your humans are nicer then mine then maybe 
         they will make these recipes for you. good luck<br><br>
         </p>
+        
+        <img src="recipe-images/dog-large.jpeg"
+             srcset="recipe-images/dog-small.jpeg 240w,
+                     recipe-images/dog-med.jpeg 400w, 
+                     recipe-images/dog-large.jpeg 600w"
+             sizes="(max-width: 15 px) 12 px, 20px"
+             alt="food1">
+
+        </figure>
+        </div>
 
         <h2>recipes</h2>
 
