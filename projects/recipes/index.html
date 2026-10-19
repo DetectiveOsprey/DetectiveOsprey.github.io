@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <script src="../../validate.js"></script>
         <link rel="icon" href="../../../images/favicon-pic.png" 
         type="image/png">
@@ -29,9 +30,14 @@
 
         .image-container {
             display: flex;
-            gap: 1px;
+            gap: 1px; 
             justify-content: center;
         }
+
+        .image-container img {
+            width: 100%;
+            height: 300px;
+        }    
 
         a, a:link, a:visited {
             color: #1F2421;
@@ -101,11 +107,7 @@
 
         <div class="image-container">
         <figure>
-        <img src="recipe-images/food1-large.png"
-             srcset="recipe-images/food1-small.png 240w,
-                     recipe-images/food1-med.png 400w, 
-                     recipe-images/food1-large.png 600w"
-             sizes="(max-width: 300 px) 240 px, 400px"
+        <img src="recipe-images/grilledcheese.png"
              alt="grilled cheese">
             <figcaption><a 
              href="2.html">
@@ -113,12 +115,9 @@
         </figure>
 
         <figure>
-        <img src="recipe-images/food1-large.png"
-             srcset="recipe-images/food1-small.png 240w,
-                     recipe-images/food1-med.png 400w, 
-                     recipe-images/food1-large.png 600w"
-             sizes="(max-width: 300 px) 240 px, 400px"
+        <img src="recipe-images/keylimepie.png"
              alt="key lime pie">
+        <!-- Photo credit: David Malosh, New York Times -->
             <figcaption><a 
                     href="1.html">
                     <h3>sour circle</h3></a></figcaption>
