@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>osprey does things</title>
+	<script src="validate-lower.js"></script>
+        <link rel="icon" href="images/favicon-pic.png" type="image/png">
+        <meta charset="UTF-8">
+        <style>
+            
+            @font-face {
+                font-family: 'Traveling_Typewriter';
+                src: url('fonts/traveling-typewriter.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }    
+
+            body{
+                /* background-color:#beeffa; */
+                background: #E38C01;
+                background: #BEEFFA;
+                background: linear-gradient(135deg, rgba(190, 239, 250, 1) 
+                    0%, rgba(120, 225, 227, 1) 50%, 
+                    rgba(151, 222, 204, 1) 100%); 
+                font-family: 'Traveling_Typewriter', monospace;
+                padding: 20px;
+                box-sizing: border-box;
+                text-align: center;
+
+                margin: 0; 
+                min-height: 100vh; 
+                border-style: solid; 
+                border-width: 28px; 
+              
+                border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAACTUlEQVR4AezWS07FMAyF4QsbZcqUlTBlykphWp2QWrZPb9PyIyHdPOy4XyOrrw/+rAKAWjkfD0ABNQuY03FDATULmNNxQwE1C5jTcUMBNQuY03FDATULmNNVbqi1hI+v75+9f+thT0h2OugTnvGpRwBq5gb06qDaLz/f3172/nV/NDb7pNNxQ9Nk+wGA7vukVwFNk+0HHA6qPU/75X5546rG61jPGzMcO3M46LHlr5cdUPM7AfSioOWytUdGiXS/9lQdR/my69zQrFiwH9AAKLsMaFYs2G8H1R6lPS2ox76s5+tY6+0WYAftFnT1eEDNbxDQ1UC1B2mPMtdrT6f16vNkD+SGZsWC/YAGQNllQLNiwf6VQYPS11wG1PxeAAXULGBOZ7+h3e848/MN6bQ+Het36ZAgmLCDBufdfhlQ8ysG9GzQqOd0e5D5+YZ0R9fHDR3IexOA9vyGaEAHkt7E3UB7GoZoQA2I2xSAbjUMvwE1IG5TpEH1O06/S7fJV/yt9erzdGtOg3YPvHs8oOY3DOhqoNqDtEfp2Fx/mE7P13rDBMkN3NAkWLQd0EgouQ5oEizabgfVHqVj7WlRgdn9Ub4/1q1TdlBrdRdMBqj5pQF6ddCop3Z7psbreWa/IR03dCDpTQDa8xuiAR1IehOng2qPi8baI3Ws8T2efPTpoPmS144A1Px+AP3voNojdWz2maWbznNDpzS1BUBrbtMoQKc0tQVAa27TKECnNLUFQGtu0yhApzS1BUBrbtMoQKc0tQVAa27TKECnNLWFXwAAAP//oHmCrQAAAAZJREFUAwBH0uC4pWgi5gAAAABJRU5ErkJggg==') 28 round; 
+                cursor: url('images/beeffa-cursor.png'), auto;
+            }
+
+           a:hover, 
+            button:hover {
+                cursor: url('images/beeffa-cursor.png'), pointer;
+            }   
+
+
+            button {
+                font-family: 'Traveling_Typewriter', monospace;
+                background-color: #06262e;
+                border-radius: 10px;
+                color: #beeffa;
+                border-color: #287e94;
+            }    
+
+            a, a:link, a:visited {
+                color: DarkSlateGray;
+            }
+
+            a, a:hover, a:active {
+                color: #437575;
+            }
+
+            img {
+                border: 5px solid DarkSlateGray;
+            }    
+
+            figcaption {
+                 font-size: 0.5rem;
+            }
+
+            div.container {
+                text-align: center;
+            }
+
+            ul.list {
+                display: inline-block;
+                text-align: left;
+            }
+
+            .buttons img {
+                max-width: 88px;
+                height: auto;
+                border: none;
+            }    
+
+
+	</style>
+    </head>
+
+    <body>
+        <header>
+	    <h1 style="color: DarkCyan;">✧ greetings! ✧</h1>
+        </header>
+            <main>
+                <section>
+	        <p>why are you here<br>how did you find me?<br>
+                are you stalking me??</p>
+                <p><br></p>
+
+                <blockquote style="color: DarkSlateGray;"><strong>
+                        "words of great encouragement!"</strong><br>
+                    <i>- rocky, project hail mary</i><strong><span 
+                        style="color: #4f3015;font-weight: 400;
+                               font-family: Arial Black; text-shadow:
+                               0.5px 0px 0px #4f3015, -0.5px 0px 0px
+                               #4f3015;">
+                        &ensp;\ 🪨 /<br>&emsp;&emsp;&emsp;&emsp;&emsp;
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        &ensp;
+                        /&ensp;|&ensp;\
+                        </span></strong>
+                <br><br></blockquote>
+
+	        <h2 style="color: DarkCyan;">✧ about me ✧</h2>
+	        <p style="color: DarkSlateGray;">
+                <s>i am a bird with a hat</s><br>
+                i am a human... probably. but you don't know that.<br>
+                i might be a osprey wearing a fedora.<br>
+                who gave a bird a hat? and a laptop to make a website?
+                who knows.<br>i contain multitudes...<br></p>
+
+                <figure>
+                <img src="images/osprey-pic.png"
+                     alt="an osprey wearing a pink cartoon fedora" 
+                        srcset="images/small-osprey.png 320w,
+                                images/medium-osprey.png 640w, 
+                                images/large-osprey.png 1024w"
+                                style="width: 25%; height: auto;"
+                         sizes="(min-width: 1024px) 35vw, 100vw">
+                <figcaption><i>source: <a href="https://animalia.bio/osprey"
+                   target="_blank" rel="noopener noreferrer">
+                            https://animalia.bio/osprey</a></i>
+                </figcaption>
+                </figure>
+                <p style="color: DarkSlateGray;"> 
+                <i><strong>a very accurate representation of me
+                <br></strong></i></p>
+                <p><br></p>
+                
+                
+                <h2 style="color: DarkCyan;">✧ things i like ✧</h2>
+                <div class="container">
+                <ul style="color: DarkSlateGray;" class="list">
+                    <li><i>project hail mary</i></li>
+                    <li>existence</li>
+	            <li>birds</li>
+	            <li>photography</li>
+                    <li>the tv show <i>silo</i></li>
+	            <li>having thumbs</li>
+                    <li>hog island</li>
+	            <li>my friends</li>
+	            <li>airplanes</li>
+	            <li>coding</li>
+	            <li>pie</li>
+                    <li>chai lattes</li>
+                    <li>web design class</li>
+                </ul>
+                </div>
+                <p><br></p>
+                <h2 style="color: DarkCyan;">✧ my pages ✧</h2>
+                <div class="container">
+                <ul style="color: DarkSlateGray;" class="list">
+                    <li><a href=
+                    "https://detectiveosprey.github.io/practice/terminal"
+                    target="_blank" rel="noopener noreferrer">
+                            a fairly incomplete guide to using vim
+                        </a></li>
+                    <li><a href=
+                    "https://detectiveosprey.github.io/practice/schedule"
+                    target="_blank" rel="noopener noreferrer">
+                            my schedule</a></li>
+                    
+                    <li><a href=
+                    "https://detectiveosprey.github.io/projects/recipes"
+                    target="_blank" rel="noopener noreferrer">
+                            my dog's recipe blog</a></li>
+                </ul>
+                </div>
+                <p><br></p>
+                <h2 style="color: DarkCyan;">✧ cool websites ✧</h2>
+                <div class="container">
+                <ul style="color: DarkSlateGray;" class="list">
+                    <li><a href="https://birdsarentreal.com/pages/evidence"
+                            target="_blank" rel="noopener noreferrer">
+                        birds aren't real</a></li>
+                    <li><a href="https://www.dhmo.org/"
+                            target="_blank" rel="noopener noreferrer">
+                            dihydrogen monoxide research division</a></li>
+                    <li><a href="https://overgrowncomic.com/" target=
+                                 "_blank" rel="noopener noreferrer">
+                            overgrown: a really cool comic</a></li>
+                    
+                    <li><a href="https://maxbittker.github.io/broider/"
+                           target="_blank" rel="noopener noreferrer">
+                            broider: a css pixel border maker</a></li>
+                    
+                    <li><a href="https://cssgradient.io/" target=
+                                 "_blank" rel="noopener noreferrer">
+                            css gradients</a></li>
+                </ul>
+                <p><br><br></p>
+                </div>
+                <div class="buttons">
+                <img src="images/astrophage.png" alt="powered by astrophage
+                button" title="the best book/movie ever <3">
+                <img src="images/eyes.gif" alt="best viewed with eyes button">
+                <img src="images/smile.gif" alt="smile button"
+                title=":)">
+                <img src="images/htmldream.gif" alt="i dream in html button"
+                style="border-width: 1px; border-style: solid; border-color:
+                       #292929 #d6d6d6 #d6d6d6 #292929; max-width: 82px;">
+                <img src="images/proweb_teal.gif" alt="pro web design button"
+                title="not really lol">
+                <img src="images/vim.gif" alt="i love vim button">
+                <img src="images/flag.gif" alt="aroace button"
+                    title="<3">
+                </div>
+                <p style="color: DarkSlateGray;">
+                <br><br>↓ validate my html/css! ↓</p>	
+            </section>
+        </main>
+    </body>
+</html>
