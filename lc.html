@@ -16,6 +16,11 @@
             text-align: center;
             margin: 100px;
             transition: color 0.3s ease;
+            cursor: url('lemon-cursor.cur'), auto;
+        }
+
+        a {
+            cursor: url('lemon-cursor.cur'), pointer;
         }
 
         body.alt-color {
@@ -31,6 +36,7 @@
             color: LemonChiffon;
             border-radius: 0px;
             border: solid LemonChiffon 1px;
+            cursor: url('lemon-cursor.cur'), pointer;
         }   
 
         a, a:hover, a:visited, a:active {
@@ -2211,7 +2217,8 @@
         <p style="font-size: 0.75rem;"> sponsored by LemonChiffon, inc.<br></p>
         <p style="font-size: 0.5rem;"> my name is Christopher Jones and I 
         approve this message </p>
-        <button id="colorToggleBtn" style="padding: 5px 20px; cursor: pointer; border: solid #b3a952 3px; color: #b3a952;">reveal!</button>
+        <button id="colorToggleBtn" style="padding: 5px 20px; 
+            border: solid #b3a952 3px; color: #b3a952;">reveal!</button>
 
 <script>
 const button = document.getElementById('colorToggleBtn');
