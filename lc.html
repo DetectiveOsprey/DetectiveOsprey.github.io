@@ -4,13 +4,23 @@
     <script src="validate.js"></script>
     <link rel="icon" href="images/lemon-favicon.png" type="image/png">
     <title>nothing to see here - just a nice sea of lemonchiffon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // const validateButton = document.querySelector('#htmlcss button');
+    </script>
     <style>
         body {
             background-color: LemonChiffon;
             color: LemonChiffon;
             text-align: center;
             margin: 100px;
+            transition: color 0.3s ease;
         }
+
+        body.alt-color {
+            color: #b3a952;
+        }    
 
         p {
             padding: 5px 150px;
@@ -2201,6 +2211,46 @@
         <p style="font-size: 0.75rem;"> sponsored by LemonChiffon, inc.<br></p>
         <p style="font-size: 0.5rem;"> my name is Christopher Jones and I 
         approve this message </p>
+        <button id="colorToggleBtn" style="padding: 5px 20px; cursor: pointer; border: solid #b3a952 3px; color: #b3a952;">reveal!</button>
+
+<script>
+const button = document.getElementById('colorToggleBtn');
+
+const dynamicStyle = document.createElement('style');
+document.head.appendChild(dynamicStyle);
+
+button.addEventListener('click', function() {
+    const secondButton = document.querySelector('#htmlcss button');
+
+    if (button.textContent === "reveal!") {
+        document.body.style.color = "#b3a952";
+
+        if (secondButton) {
+            secondButton.style.color = "#b3a952";
+            secondButton.style.borderColor = "#b3a952";
+        }
+
+        dynamicStyle.innerHTML = `
+            a:link, a:visited, a:hover, a:active {
+                color: #b3a952 !important;
+            }
+        `;
+
+        button.textContent = "hide!";
+    } else {
+        document.body.style.color = "";
+
+        if (secondButton) {
+            secondButton.style.color = "";
+            secondButton.style.borderColor = "";
+        }
+
+        dynamicStyle.innerHTML = "";
+
+        button.textContent = "reveal!";
+    }
+});
+</script>
     </footer>    
 </body>
 </html>
