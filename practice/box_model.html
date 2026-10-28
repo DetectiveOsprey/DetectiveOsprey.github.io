@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../validate.js"></script>
+    <title>box model practice</title>
+    <style>
+
+    #red {
+        background-color: #d66058;
+        height: 100px;
+        width: 100px;
+        border: 2px black solid;
+        background-clip: content-box;
+        margin-left: 300px;
+        margin-right: 300px;
+    }  
+
+    #blue {
+        background-color: #5886d6;
+        background-clip: content-box;
+        height: 100px;
+        width: 100px;
+        border: 2px black solid;
+        padding: 100px;
+        margin-left: 401px;
+
+    }
+
+
+    #green {
+        background-color: #58d693;
+        background-clip: content-box;
+        border: 2px black solid;
+        height: 100px;
+        width: 100px;
+        padding-left: 20px;
+        margin: 30px 30px;
+    }
+
+    #yellow {
+        background-color: #d6bb58;
+        background-clip: content-box;
+        border: 2px black solid;
+        height: 100px;
+        width: 100px;
+        margin-left: 300px;
+        padding: 30px 20px 0px 20px;
+    }    
+
+    #purple {
+        background-color: #9358d6;
+        background-clip: content-box;
+        border: 2px black solid;
+        height: 100px;
+        width: 100px;
+        margin-left: 200px;
+        padding: 0px 0px 100px 0px;
+
+    </style>
+</head>
+<body>
+    <header>    
+    <h1>waow. boxes.</h1>
+    </header>
+    <main>
+        <div id="red"></div>
+        <div id="blue"></div>
+        <div id="green"></div>
+        <div id="yellow"></div>
+        <div id="purple"></div>
+    </main>
+    <footer>
+
+    </footer>    
+</body>
+</html>
+
