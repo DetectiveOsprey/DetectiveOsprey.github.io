@@ -87,3 +87,8 @@
     .lc:hover, .lc:active {
         color: LemonChiffon;
     }
+
+    ::selection {
+        background-color: #06262e; /* The background highlight color */
+        color: #beeffa;            /* The text color when selected */
+    }
