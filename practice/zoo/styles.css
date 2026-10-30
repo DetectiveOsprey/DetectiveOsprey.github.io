@@ -1,6 +1,7 @@
     body {
         background-color: #7a0f45;
         color: #f7dae9;
+        text-align: center;
     }
 
     h1, h2, th {
@@ -8,20 +9,52 @@
     }
 
     a, a:visited, a:active {
-        color: #f7dae9;
+        color: #380b22;
     }
 
     a:hover {
-        color: #ad6189
+        color: #ad6189;
     }
 
     table, tr, th, td {
         border: solid #bf80a2 3px;
         border-collapse: collapse;
+        margin: 0 auto;
     }
 
     button {
         background-color: #ff99ce;
         border-radius: 10px;
         border-color: #bf80a2;
-    }    
+    }
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        justify-content: space-evenly;
+        width: 400px;
+        text-align: center;
+    }   
+
+   a {
+       padding: 5px;
+       background-color: #ff99ce;
+       border: solid #bf80a2;
+       border-radius: 5px;
+       text-decoration: none;
+
+   }
+
+    #button-box {
+        display: flex;
+        justify-content: center;
+    }  
+
+   ul {
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+   }    
