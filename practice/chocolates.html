@@ -1,5 +1,8 @@
- <html>
+<!DOCTYPE html> 
+<html lang="en">
     <head>
+        <title>chocolates, but chris can't have them because he can't write
+            a valid html page.</title>
         <style>
             body{
                 background: linear-gradient(135deg, #1a2980, #26d0ce);
@@ -176,6 +179,10 @@
               --x: 20px; /* horizontal offset (no percentage) */
               --y: 10px; /* vertical offset (no percentage) */
               
+   
+                grid-column-start: 2;
+                grid-row-start: 1;
+                display: grid;
               width: 150px;
               place-items: center;
               margin: auto;
@@ -204,7 +211,7 @@
                 height: 150px;
                 background-color: #5c2c16; /* Chocolate brown */
                 border-radius: 50% 50% 50% 50% / 70% 70% 30% 30%;
-                box-shadow: inset -5px -10px 15px rgba(0, 0, 0, 0.4);
+                /* box-shadow: inset -5px -10px 15px rgba(0, 0, 0, 0.4);*/
                 margin: auto;
             }
 
@@ -215,9 +222,51 @@
                 background: #ede6d6;
                 width: 140px;
                 margin: auto;
+                
+                grid-column-start: 1;
+                grid-row-start: 2;
+                display: grid;
             }
 
             #bar {
+                height: 300px;
+                width: 150px;
+                background-color: #633d24;
+                grid-column-start: 2;
+                grid-row: 2 / span 2;
+                display: grid;
+                margin: auto;
+            }
+
+            #cup {
+              --s: 150px; /* adjust to control the size */
+
+              width: var(--s); 
+              aspect-ratio: 1;
+              --g:/calc(var(--s)*0.102) calc(var(--s)*0.102) radial-gradient(50% 50%,#000 99%,#0000 101%) no-repeat;
+              mask: calc(50% + var(--s)*0.431) calc(50% + var(--s)*0) var(--g),calc(50% + var(--s)*0.412) calc(50% + var(--s)*0.127) var(--g),calc(50% + var(--s)*0.356) calc(50% + var(--s)*0.243) var(--g),calc(50% + var(--s)*0.269) calc(50% + var(--s)*0.337) var(--g),calc(50% + var(--s)*0.157) calc(50% + var(--s)*0.401) var(--g),calc(50% + var(--s)*0.032) calc(50% + var(--s)*0.43) var(--g),calc(50% + var(--s)*-0.096) calc(50% + var(--s)*0.42) var(--g),calc(50% + var(--s)*-0.215) calc(50% + var(--s)*0.373) var(--g),calc(50% + var(--s)*-0.316) calc(50% + var(--s)*0.293) var(--g),calc(50% + var(--s)*-0.388) calc(50% + var(--s)*0.187) var(--g),calc(50% + var(--s)*-0.426) calc(50% + var(--s)*0.064) var(--g),calc(50% + var(--s)*-0.426) calc(50% + var(--s)*-0.064) var(--g),calc(50% + var(--s)*-0.388) calc(50% + var(--s)*-0.187) var(--g),calc(50% + var(--s)*-0.316) calc(50% + var(--s)*-0.293) var(--g),calc(50% + var(--s)*-0.215) calc(50% + var(--s)*-0.373) var(--g),calc(50% + var(--s)*-0.096) calc(50% + var(--s)*-0.42) var(--g),calc(50% + var(--s)*0.032) calc(50% + var(--s)*-0.43) var(--g),calc(50% + var(--s)*0.157) calc(50% + var(--s)*-0.401) var(--g),calc(50% + var(--s)*0.269) calc(50% + var(--s)*-0.337) var(--g),calc(50% + var(--s)*0.356) calc(50% + var(--s)*-0.243) var(--g),calc(50% + var(--s)*0.412) calc(50% + var(--s)*-0.127) var(--g),radial-gradient(calc(var(--s)*0.467),#000 99%,#0000 101%) subtract,calc(50% + var(--s)*0.5) calc(50% + var(--s)*0.075) var(--g),calc(50% + var(--s)*0.456) calc(50% + var(--s)*0.219) var(--g),calc(50% + var(--s)*0.371) calc(50% + var(--s)*0.344) var(--g),calc(50% + var(--s)*0.253) calc(50% + var(--s)*0.438) var(--g),calc(50% + var(--s)*0.113) calc(50% + var(--s)*0.493) var(--g),calc(50% + var(--s)*-0.038) calc(50% + var(--s)*0.504) var(--g),calc(50% + var(--s)*-0.185) calc(50% + var(--s)*0.471) var(--g),calc(50% + var(--s)*-0.315) calc(50% + var(--s)*0.395) var(--g),calc(50% + var(--s)*-0.418) calc(50% + var(--s)*0.285) var(--g),calc(50% + var(--s)*-0.483) calc(50% + var(--s)*0.149) var(--g),calc(50% + var(--s)*-0.506) calc(50% + var(--s)*0) var(--g),calc(50% + var(--s)*-0.483) calc(50% + var(--s)*-0.149) var(--g),calc(50% + var(--s)*-0.418) calc(50% + var(--s)*-0.285) var(--g),calc(50% + var(--s)*-0.315) calc(50% + var(--s)*-0.395) var(--g),calc(50% + var(--s)*-0.185) calc(50% + var(--s)*-0.471) var(--g),calc(50% + var(--s)*-0.038) calc(50% + var(--s)*-0.504) var(--g),calc(50% + var(--s)*0.113) calc(50% + var(--s)*-0.493) var(--g),calc(50% + var(--s)*0.253) calc(50% + var(--s)*-0.438) var(--g),calc(50% + var(--s)*0.371) calc(50% + var(--s)*-0.344) var(--g),calc(50% + var(--s)*0.456) calc(50% + var(--s)*-0.219) var(--g),calc(50% + var(--s)*0.5) calc(50% + var(--s)*-0.075) var(--g);
+              display: grid;
+              grid-column-start: 1;
+              grid-row-start: 3;
+              background-color: #4a2706;
+              margin: auto;
+                }   
+
+            #squircle {
+                 width: 150px;
+              height: 150px;
+              background: #664c30;
+              border-radius: 40px;
+              
+              /* Smooths out the mathematical corner "bursting" effect */
+              mask-image: radial-gradient(circle at center, black 98%, transparent 100%);
+              -webkit-mask-image: radial-gradient(circle at center, black 98%, transparent 100%);
+              display: grid;
+              grid-column-start: 3;
+              grid-row-start: 3;
+              margin: auto;
+            }    
+
 
                 
         </style>
@@ -229,6 +278,9 @@
             <div id="bitten"></div>
             <div id="kiss"></div>
             <div id="hex"></div>
+            <div id="bar"></div>
+            <div id="cup"></div>
+            <div id="squircle"></div>
             <div class="lilbits">   
                 <div id="mnm1">
                 m    
