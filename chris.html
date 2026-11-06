@@ -4,12 +4,25 @@
     <title>Christopher Jones - Resume</title>
     <script src="validate.js"></script>
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: "Verdana", sans-serif;
+        }    
+
         body {
             background-color: LemonChiffon;
             color: #2B2D2F;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Georgia", serif;
+        }
+
+        .grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-        }   
+        }    
 
         a, a:link, a:visited {
             color: #2B2D2F;
@@ -26,25 +39,57 @@
             color: #D4A373;
             border: outset #2B2D2F 2px;
             display: grid;
+            font-family: "Verdana", sans-serif;
             
         }    
 
         #title {
             display: grid;
             grid-column-start: 1;
+            margin: auto;
+            padding: 15px;
+        }
+
+        #title img {
+            /*padding: 0px 30px 0px 30px;*/
+            border: solid #D4A373 6px;
+            display: block;
         }    
+
+        #nav {
+           height: 50px; 
+            width: 100vw;
+            background-color: #1E4D2B;
+            padding: 1px 0px 5px 10px;
+        } 
+
+        #list {
+            display: grid;
+            grid-column-start: 2;
+        }
+
+        img {
+            width: 20vw;
+            height: auto;
+            display: block;
+            font-size: 0;
+            line-height: 0;
+        }    
+
+
     </style>
 </head> 
 <body> 
-<header>
-    <div id="title">
-    <figure>
-    <h1 style="color: #1E4D2B;">Resume</h1>
-    <figcaption>Christopher Jones</figcaption>
-    </figure>
+    <div id="nav">
+    <h1 style="color: LemonChiffon; font-size: 1.75em;">Resume</h1>
     </div>
-</header>
-<main>
+    <main>    
+    <div class="grid">
+    <div id="title">
+        <h2 style="font-size: 3em;">Christopher M. Jones<h2>
+        <img src="images/chris.png">        
+    </div>
+    <div id="list">
     <ul>
         <li><a href="https://chrisjonesforcongress.com/">
                 Campaign for Congress</a></li>
@@ -73,7 +118,9 @@
     <li><a href="https://www.rothmanortho.com/physicians/christopher-jones-md/">
         Orthopedic Hand Surgeon</a></li>
     </ul>
+    </div>
 </main>
+</div>    
 <footer>
 
 </footer>
