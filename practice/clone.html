@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; }
+    img { display: block; width: 100%; background: #ddd; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+    p { color: #555; line-height: 1.6; margin-bottom: 0.5rem; }
+    button { padding: 0.5rem 1.5rem; border: none; border-radius: 5px; background: #333; color: #fff; cursor: pointer; }
+    /* Layout */
+    .c1 {
+      padding: 1rem;
+    }
+    .c2 {
+      display: grid;
+      grid:
+        'text gap buttons' 10px
+        / 2fr 2fr 1fr;
+      padding: 1rem;
+    }
+    .c3 {
+      grid-area: text;
+    }
+    .c4 {
+      display: grid;
+      grid:
+        'b1 b2 b3' auto
+        / 1fr 1fr 1fr;
+      grid-area: buttons;
+      padding: 1rem;
+    }
+    .c5 {
+      grid-area: b1;
+    }
+    .c6 {
+      grid-area: b2;
+    }
+    .c7 {
+      grid-area: b3;
+      padding: 0.5rem;
+    }
+    .c8 {
+      padding: 1rem;
+    }
+    .c9 {
+      display: grid;
+      grid:
+        'sun title list magnify account' 10px
+        / 0.5fr 2fr 3fr 0.5fr 0.5fr;
+      padding: 1rem;
+    }
+    .c10 {
+      grid-area: list;
+    }
+    .c11 {
+      grid-area: magnify;
+    }
+    .c12 {
+      grid-area: sun;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c13 {
+      grid-area: title;
+      text-align: center;
+    }
+    .c14 {
+      grid-area: account;
+    }
+    .c15 {
+      padding: 1rem;
+    }
+    .c16 {
+      display: grid;
+      grid:
+        'image' auto
+        'title' auto
+        'caption' auto
+        / 1fr;
+      padding: 1rem;
+    }
+    .c17 {
+      grid-area: image;
+      width: 65%;
+      aspect-ratio: 8 / 3;
+    }
+    .c18 {
+      text-align: center;
+    }
+    .c19 {
+      grid-area: caption;
+    }
+    .c20 {
+      display: grid;
+      grid:
+        'gap1 button gap2' auto
+        / 2fr 1fr 2fr;
+      padding: 1rem;
+    }
+    .c21 {
+      grid-area: button;
+    }
+    .c22 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    .c23 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.5rem;
+    }
+    .c24 {
+      width: 35%;
+      aspect-ratio: 4 / 3;
+    }
+    .c25 {
+      width: 35%;
+      aspect-ratio: 4 / 3;
+    }
+    .c26 {
+      padding: 1rem;
+    }
+    .c27 {
+      text-align: center;
+    }
+    .c28 {
+      display: grid;
+      grid:
+        'img1 img2 img3 img4 img5' auto
+        'cap1 cap2 cap3 cap4 cap5' auto
+        / 1fr 1fr 1fr 1fr 1fr;
+      padding: 1rem;
+    }
+    .c29 {
+      grid-area: img1;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c30 {
+      grid-area: img2;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c31 {
+      grid-area: img3;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c32 {
+      grid-area: img4;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c33 {
+      grid-area: img5;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c34 {
+      grid-area: cap1;
+    }
+    .c35 {
+      grid-area: cap2;
+    }
+    .c36 {
+      grid-area: cap3;
+    }
+    .c37 {
+      grid-area: cap4;
+    }
+    .c38 {
+      grid-area: cap5;
+    }
+    .c39 {
+      display: grid;
+      grid:
+        'img1 gap1 title   gap2 img2' 100px
+        'img1 gap1 caption gap2 img2' 100px
+        / 1fr 1fr 2.5fr 1fr 1fr;
+      padding: 1rem;
+    }
+    .c40 {
+      grid-area: img1;
+      aspect-ratio: 3 / 4;
+    }
+    .c41 {
+      grid-area: title;
+      text-align: center;
+    }
+    .c42 {
+      grid-area: img2;
+      aspect-ratio: 3 / 4;
+    }
+    .c43 {
+      grid-area: caption;
+    }
+    .c44 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      padding: 1rem;
+    }
+    .c45 {
+      display: grid;
+      grid:
+        'a b' 150px
+        'c d' 150px
+        'e f' 150px
+        / 1fr 1fr;
+      padding: 1rem;
+    }
+    .c46 {
+      grid-area: a;
+      aspect-ratio: 8 / 3;
+    }
+    .c47 {
+      display: grid;
+      grid:
+        'caption' 1fr
+        'button' 1fr
+        / 1fr;
+      grid-area: b;
+      padding: 1rem;
+    }
+    .c48 {
+      grid-area: caption;
+    }
+    .c49 {
+      grid-area: button;
+    }
+    .c50 {
+      display: grid;
+      grid:
+        'caption' 1fr
+        'button' 1fr
+        / 1fr;
+      grid-area: c;
+      padding: 1rem;
+    }
+    .c51 {
+      grid-area: caption;
+    }
+    .c52 {
+      grid-area: button;
+    }
+    .c53 {
+      grid-area: d;
+      aspect-ratio: 8 / 3;
+    }
+    .c54 {
+      grid-area: e;
+      aspect-ratio: 8 / 3;
+    }
+    .c55 {
+      display: grid;
+      grid:
+        'caption' auto
+        'button' auto
+        / 1fr;
+      grid-area: f;
+      padding: 1rem;
+    }
+    .c56 {
+      grid-area: caption;
+    }
+    .c57 {
+      grid-area: button;
+    }
+    .c58 {
+      padding: 0.5rem;
+    }
+    .c59 {
+      display: grid;
+      grid:
+        'side about' auto
+        'side social' auto
+        'side email' auto
+        / 1fr 1fr;
+      padding: 1rem;
+    }
+    .c60 {
+      display: grid;
+      grid:
+        'sun title' auto
+        'one one' auto
+        'two two' auto
+        / 1fr 5fr;
+      grid-area: side;
+      padding: 1rem;
+    }
+    .c61 {
+      grid-area: sun;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c62 {
+      grid-area: title;
+    }
+    .c63 {
+      grid-area: one;
+    }
+    .c64 {
+      grid-area: two;
+    }
+    .c65 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      grid-area: about;
+      padding: 1rem;
+    }
+    .c66 {
+      display: grid;
+      grid:
+        'buttons gap' 30px
+        / 1fr 1fr;
+      grid-area: social;
+      padding: 1rem;
+    }
+    .c67 {
+      display: grid;
+      grid:
+        'b1 b2 b3 b4' auto
+        / 1fr 1fr 1fr 1fr;
+      grid-area: buttons;
+      padding: 1rem;
+    }
+    .c68 {
+      grid-area: b1;
+    }
+    .c69 {
+      grid-area: b2;
+    }
+    .c70 {
+      grid-area: b3;
+    }
+    .c71 {
+      grid-area: b4;
+    }
+    .c72 {
+      display: grid;
+      grid:
+        'title' 1fr
+        'button' 1fr
+        / 1fr;
+      grid-area: email;
+      padding: 1rem;
+    }
+    .c73 {
+      grid-area: title;
+    }
+    .c74 {
+      grid-area: button;
+    }
+  </style>
+</head>
+<body>
+<header class="c1">
+  <div class="c2">
+    <h3 class="c3">Layout cloned from <a href="https://nationalzoo.si.edu/
+              ">Smithsonian's National Zoo</a></h3>
+    <div class="c4">
+      <button class="c5">Click me</button>
+      <button class="c6">Click me</button>
+      <button class="c7">Click me</button>
+    </div>
+  </div>
+  <div class="c8">
+    <div class="c9">
+      <h3 class="c10">Sub-heading</h3>
+      <button class="c11">Click me</button>
+      <img src="placeholder.jpg" alt="" class="c12">
+      <h1 class="c13">Page Heading</h1>
+      <button class="c14">Click me</button>
+    </div>
+  </div>
+</header>
+<main class="c15">
+  <div class="c16">
+    <img src="placeholder.jpg" alt="" class="c17">
+    <h2 class="c18">Section Heading</h2>
+    <p class="c19">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  </div>
+  <div class="c20">
+    <button class="c21">Click me</button>
+  </div>
+  <div class="c22">
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+  </div>
+  <div class="c23">
+    <img src="placeholder.jpg" alt="" class="c24">
+    <img src="placeholder.jpg" alt="" class="c25">
+  </div>
+  <div class="c26">
+    <h3 class="c27">Sub-heading</h3>
+  </div>
+  <div class="c28">
+    <img src="placeholder.jpg" alt="" class="c29">
+    <img src="placeholder.jpg" alt="" class="c30">
+    <img src="placeholder.jpg" alt="" class="c31">
+    <img src="placeholder.jpg" alt="" class="c32">
+    <img src="placeholder.jpg" alt="" class="c33">
+    <p class="c34">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+    <p class="c35">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+    <p class="c36">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+    <p class="c37">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+    <p class="c38">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  </div>
+  <div class="c39">
+    <img src="placeholder.jpg" alt="" class="c40">
+    <h3 class="c41">Sub-heading</h3>
+    <img src="placeholder.jpg" alt="" class="c42">
+    <p class="c43">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  </div>
+  <div class="c44">
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+  </div>
+  <div class="c45">
+    <img src="placeholder.jpg" alt="" class="c46">
+    <div class="c47">
+      <p class="c48">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+      <button class="c49">Click me</button>
+    </div>
+    <div class="c50">
+      <p class="c51">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+      <button class="c52">Click me</button>
+    </div>
+    <img src="placeholder.jpg" alt="" class="c53">
+    <img src="placeholder.jpg" alt="" class="c54">
+    <div class="c55">
+      <p class="c56">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+      <button class="c57">Click me</button>
+    </div>
+  </div>
+</main>
+<footer class="c58">
+  <div class="c59">
+    <div class="c60">
+      <img src="placeholder.jpg" alt="" class="c61">
+      <h3 class="c62">Sub-heading</h3>
+      <p class="c63">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+      <p class="c64">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+    </div>
+    <div class="c65">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+    </div>
+    <div class="c66">
+      <div class="c67">
+        <button class="c68">Click me</button>
+        <button class="c69">Click me</button>
+        <button class="c70">Click me</button>
+        <button class="c71">Click me</button>
+      </div>
+    </div>
+    <div class="c72">
+      <h3 class="c73">Sub-heading</h3>
+      <button class="c74">Click me</button>
+    </div>
+  </div>
+</footer>
+  <script>
+  (function() {
+    var s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/gh/gracehoppercenter/validate@1.0.5/validate.js";
+    s.async = false;
+    document.head.appendChild(s);
+  })();
+  </script>
+</body>
+</html>
