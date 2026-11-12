@@ -7,7 +7,6 @@
     }    
 
     body{
-        background: #E38C01;
         background: #BEEFFA;
         background: linear-gradient(135deg, rgba(190, 239, 250, 1) 
             0%, rgba(120, 225, 227, 1) 50%, 
@@ -89,7 +88,27 @@
     }
 
     ::selection {
-        background-color: #06262e; /* The background highlight color */
-        color: #beeffa;            /* The text color when selected */
+        background-color: #06262e; 
+        color: #beeffa;            
     }
 
+    #notsuspiciousatall {
+        display: grid;
+        height: 10px;
+        width: 10px;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        position: relative;
+        z-index: 9999;
+        pointer-events: auto;
+
+    }
+
+    #notsuspiciousatall:hover {
+        cursor: pointer;
+    }
+
+    #notsuspiciousatall a {
+        cursor: pointer;
+    }
