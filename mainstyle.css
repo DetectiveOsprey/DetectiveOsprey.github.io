@@ -6,12 +6,21 @@
         font-style: normal;
     }    
 
+    @font-face {
+        font-family: 'American_Typewriter';
+        src: url('fonts/american-typewriter.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }    
+
+
+
     body{
         background: #BEEFFA;
         background: linear-gradient(135deg, rgba(190, 239, 250, 1) 
             0%, rgba(120, 225, 227, 1) 50%, 
             rgba(151, 222, 204, 1) 100%); 
-        font-family: 'Traveling_Typewriter', monospace;
+        font-family: 'Traveling_Typewriter', serif;
         /* credit to Carl Krull for designing this font, it's awesome! */
         padding: 20px;
         box-sizing: border-box;
@@ -27,6 +36,10 @@
 
     html {
         cursor: url('images/beeffa-cursor.png'), auto;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'American_Typewriter', serif;
     }
 
     a, button {
@@ -112,3 +125,5 @@
     #notsuspiciousatall a {
         cursor: pointer;
     }
+
+   
