@@ -8,6 +8,13 @@ body {
     font-family: 'Traveling_Typewriter', 'American_Typewriter', 'Verdana', serif;
     color: #0a4714;
     margin: 0px;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #e19495;
+
 }
 
 @font-face {
@@ -17,9 +24,7 @@ body {
     font-style: normal;
 }    
 
-html {
-    background-color: #e19495;
-}
+
 
 header { 
     display: grid; 
