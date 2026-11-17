@@ -1,0 +1,97 @@
+body {
+    display: grid;
+    grid:
+    "gap header gap2" 0.5fr
+    "gap main gap2"  5fr
+    "gap footer gap2" 0.5fr
+    / 1fr 4fr  1fr;
+    font-family: 'Traveling_Typewriter', 'American_Typewriter', 'Verdana', serif;
+    color: #0a4714;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'Traveling_Typewriter';
+    src: url('../../fonts/traveling-typewriter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}    
+
+html {
+    background-color: #e19495;
+}
+
+header { 
+    display: grid; 
+    grid-area: header; 
+}
+
+main   {
+    display: grid; 
+    grid-area: main;
+    line-height: 1.5;
+}
+
+footer  {
+    display: grid;
+     grid-area: footer; 
+}
+
+a {
+    text-decoration: none;
+    color: #742727;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ac5252;
+}
+
+
+.link {
+    list-style: none;
+    padding-left: 38px; 
+}
+
+.link li {
+    background-color: white;
+}
+
+.text-gap {
+    list-style: none;
+}
+
+#header, #main, #footer {
+    background-color: #94e1a6;
+    padding: 15px;
+    padding-right: 30px;
+}
+
+#header {
+    text-align: center;
+}
+
+#main-list {
+  list-style: none; /* Removes the default black dots */
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#main-list li.name {
+  position: relative;
+  padding-left: 28px; /* Creates space for your image */
+  margin-bottom: 10px;
+}
+
+#main-list li.name::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1px; /* Adjusts vertical alignment */
+  width: 25px; /* Sets the image width */
+  height: 25px; /* Sets the image height */
+  background-image: url("tree.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
