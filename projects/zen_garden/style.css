@@ -22,7 +22,7 @@
 }    
 
 html {
-  background-color: #FAEDDC
+  background-color: #fff6ec
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,7 +36,7 @@ body {
 }
 
 a, a:link, a:visited {
-  color: #99A63C
+  color: #6D7722
 }
 
 a:hover, a:active {
@@ -68,6 +68,7 @@ a:hover, a:active {
 .button {
   padding: 8px;
   border: solid 3px black;
+  background-color: #35400C;
 }
 
 .card img {
@@ -259,3 +260,4 @@ card img {
 legal p {
   font-size: 
 }
+
