@@ -1,0 +1,261 @@
+/*
+  ITD110 Zen Garden Project
+  Your name: Olivia Ferrill :)
+  Your design concept (one sentence): grasshopper themed! (to bring our mascot into existence)
+
+  All of your CSS goes in this file.
+*/
+
+
+@font-face {
+    font-family: 'Bricolage_Grotesque';
+    src: url('../../fonts/bricolage-grotesque-semi-bold.ttf') format('truetype');
+    font-weight: 200 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plus_Jakarta_Sans';
+    src: url('../../fonts/plus-jakarta-sans.ttf') format('truetype');
+    font-weight: 200 800;
+    font-style: normal;
+}    
+
+html {
+  background-color: #FAEDDC
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bricolage_Grotesque', 'Verdana', sans-serif;
+    font-weight: 800;
+}
+
+body {
+  font-family: 'Plus_Jakarta_Sans', 'Arial', sans-serif;
+  color: #35400C
+}
+
+a, a:link, a:visited {
+  color: #99A63C
+}
+
+a:hover, a:active {
+  color: #5f6530
+}
+
+#top-nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+#branding img {
+  width: 30%;
+  height: auto;
+}
+
+.button {
+  padding: 8px;
+  border: solid 3px black;
+}
+
+.card img {
+  width: 20%;
+  height: auto;
+}
+
+.quick-link-list img {
+  width: 20%;
+  height: auto;
+}
+
+.quick-link-list img:hover {
+  width: 21%;
+  height: auto;
+}
+
+.quick-link-list li {
+  list-style: none;
+}
+
+#skip-link {
+  display: none;
+}
+
+.submenu {
+  display: none;
+}
+
+.menu-item:hover .submenu, .menu-item:focus-within .submenu {
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 5px;
+  list-style: none;
+
+}
+
+body {
+    display: grid;
+    grid:
+    "gap header gap2" auto
+    "gap main gap2"  auto
+    "gap footer gap2" auto
+    / 0.75fr 4fr  0.75fr;
+}
+
+body > * {
+  padding: 10px;
+}
+
+
+
+#extend-header { grid-area: header; }
+main { grid-area: main; }
+footer { grid-area: footer; }
+
+main {
+  display: grid;
+  grid:
+    "hero" auto
+    "news" auto
+    "events" auto
+    "icons" auto
+    / 1fr;
+}
+
+#hero { grid-area: hero; }
+#news { grid-area: news; }
+#events { grid-area: events; }
+#quick-links { grid-area: icons; }
+
+.card-list {
+  display: grid;
+  grid:
+   "news-header news-header news-header" 0.25fr
+    "card1 card2 card3"  5fr
+    "card4 card5 card6" 5fr
+    "footer footer footer" 0.25fr
+    / 1fr 1fr  1fr;
+}
+
+.card-list > * {
+  padding: 5px;
+}
+
+
+#news-header { grid-area: news-header; }
+#card1 { grid-area: card1; }
+#card2 { grid-area: card2; }
+#card3 { grid-area: card3; }
+#card4 { grid-area: card4; }
+#card5 { grid-area: card5; }
+#card6 { grid-area: card6; }
+.more-link {grid-area: footer; }
+
+.quick-link-list {
+  display: grid;
+  grid:
+   "link-header link-header link-header" 0.25fr
+    "icon1 icon2 icon3"  3fr
+    "icon4 icon5 icon6" 3fr
+    "icon7 icon8 icon9" 3fr
+    "icon10 icon11 gap" 3fr
+    / 1fr 1fr  1fr;
+
+    margin-bottom: 30px;
+
+    
+
+}
+
+.quick-link-list > * {
+  padding: 15px;
+}
+
+.quick-link-list li ::marker {
+  display: block;
+}
+
+#link-header { grid-area: link-header; }
+#icon1 { grid-area: icon1; }
+#icon2 { grid-area: icon2; }
+#icon3 { grid-area: icon3; }
+#icon4 { grid-area: icon4; }
+#icon5 { grid-area: icon5; }
+#icon6 { grid-area: icon6; }
+#icon7 { grid-area: icon7; }
+#icon8 { grid-area: icon8; }
+#icon9 { grid-area: icon9; }
+#icon10 { grid-area: icon10; }
+#icon11 { grid-area: icon11; }
+
+#footer-main {
+  padding: 5px;
+  display: grid;
+  grid:
+  "footer-header footer-middle footer-links" auto
+  "footer-legal footer-legal footer-legal" auto
+  / 1fr              1fr           1fr;
+}
+
+#school-contact { grid-area: footer-header; }
+#district-contact { grid-area: footer-middle; }
+#footer-nav { grid-area: footer-links; }
+#legal { grid-area: footer-legal; }
+
+#district-contact img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+card img {
+  width: 100%;
+  height: auto;
+}
+
+#hero::before {
+  content: "HOME OF THE GRASSHOPPERS";
+  font-size: 2.5em;
+  font-family: "Bricolage_Grotesque", sans-serif;
+  color: #F2620f;
+  background-color: #d9c877;
+  border: solid 5px #d9c877;
+  padding: 0 5px;
+  text-align: center;
+  
+  display: table;
+  margin: 0 auto 15px auto;
+}
+
+#hero::after, #news::after, #events::after, #quick-links::after, aside::after {
+  content: "";
+  display: block;
+  width: 90%;          
+  height: 3px;        
+  background: #F2620f;    
+  margin: 65px auto 0; 
+  margin-bottom: 40px;
+ 
+}
+
+legal p {
+  font-size: 
+}
