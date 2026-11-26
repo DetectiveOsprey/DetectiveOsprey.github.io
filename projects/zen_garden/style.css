@@ -22,7 +22,8 @@
 }    
 
 html {
-  background-color: #fff6ec
+  background-color: #fff6ec;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,7 +33,14 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: 'Plus_Jakarta_Sans', 'Arial', sans-serif;
-  color: #35400C
+  color: #35400C;
+  background-image: url("images/background-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 a, a:link, a:visited {
@@ -47,6 +55,101 @@ a:hover, a:active {
   display: flex;
   justify-content: space-around;
   list-style: none;
+}
+
+#contact, #calendars, #careers, #engage, #district, #crisis {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.5rem;
+  display: none;
+
+}
+
+#contact, #calendars, #careers, #engage, #district, #crisis {
+  display: block;
+}
+
+
+#contact, #calendars, #careers, #engage, #district {
+  padding-right: 8px;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  background-image: url("images/icon1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+#calendars::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  background-image: url("images/icon2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+#careers::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  background-image: url("images/icon3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+#engage::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  background-image: url("images/icon4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+#district::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  background-image: url("images/icon5.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+#crisis::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  background-image: url("images/icon6.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
 }
 
 .menu {
@@ -69,6 +172,30 @@ a:hover, a:active {
   padding: 8px;
   border: solid 3px black;
   background-color: #35400C;
+}
+
+/* .button a, .button a:link, .button a:visited {
+  color: #f2dfbb;
+}
+
+.button a:hover, .button a:active {
+  color: #ab9876;
+} */
+
+.sub-menu a, .sub-menu a:link, .sub-menu a:visited {
+  color: #6D7722;
+}
+
+.sub-menu a, .sub-menu a:hover, .sub-menu a:active {
+  color: #5f6530;
+}
+
+.menu-item a, .menu-item a:link, .menu-item a:visited {
+  color: #f2dfbb;
+}
+
+.menu-item a, .menu-item a:hover, .menu-item a:active {
+  color: #ab9876;
 }
 
 .card img {
@@ -237,8 +364,8 @@ card img {
   font-size: 2.5em;
   font-family: "Bricolage_Grotesque", sans-serif;
   color: #F2620f;
-  background-color: #d9c877;
-  border: solid 5px #d9c877;
+  background-color: #6D7722;
+  border: solid 5px #6D7722;
   padding: 0 5px;
   text-align: center;
   
@@ -257,7 +384,42 @@ card img {
  
 }
 
-legal p {
-  font-size: 
+#legal p, #disclaimer {
+  font-size: 0.75rem;
 }
+
+#legal-body::after {
+  content: "Grasshopper Image Credits: Pixneo, Animalia.bio, Rob Felix - Journal of Orthoptera Research, Picryl, CyclicalCore - DeviantArt. All images are lisenced for personal use under Creative Commons.";
+  display: inline-block;
+  font-size: 0.75rem;
+  line-height: 1.3;
+}
+
+#copyright {
+  display: none;
+}
+
+#copy1::after {
+  content: "HTML \00A9  2026 Arlington Tech. CSS \00A9  2026 Olivia Ferrill.";
+  font-size: 0.75rem;
+  font-family: "Bricolage_Grotesque", "Verdana", sans-serif;
+}
+
+#branding {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#nav-bar {
+  background-color: #6D7722;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sub-link a {
+  color: #35400C;
+}
+
+
+
 
